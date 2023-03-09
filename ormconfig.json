@@ -1,0 +1,9 @@
+{
+    "type": "postgres",
+    "host": "3.98.137.198",
+    "port": 5432,
+    "username": "postgres",
+    "password": "myPassword",
+    "database": "welbi-db",
+    "entities": ["./src/models/*.ts"]
+  }
