@@ -1,0 +1,6 @@
+
+I struggled with creating the queries in the resolver using graphql/typeorm and then I ran out of time.
+I'm happy to explain how I would have done this.
+
+I also converted the data into a relational database, everything related to this can be found in the 'misc' folder.
+
