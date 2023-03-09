@@ -4,3 +4,16 @@ I'm happy to explain how I would have done this.
 
 I also converted the data into a relational database, everything related to this can be found in the 'misc' folder.
 
+Example SQL query that I would have liked to convert to suit API:
+
+ Engages the highest number of residents (returns 3 events that has had the highest unqiue number of attendees overall):
+
+    select p.name, count(distinct(pa.resident_user_id)) from programs p
+    join program_attendee pa on p.id = pa.program_id
+    group by p.name
+    order by count(distinct(pa.resident_user_id)) desc
+    limit 3
+
+    "Living Loving Local Dinner"	- 200
+    "Mimosa Brunch Lunch"	        - 196
+    "Mother's Day Brunch Buffet"	- 196
